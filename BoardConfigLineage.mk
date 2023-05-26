@@ -6,6 +6,11 @@
 
 BUILD_BROKEN_DUP_RULES := true
 
+DEVICE_PATH := device/google/lynx
+
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lynx
+
 # Kernel
 TARGET_KERNEL_DTBO_PREFIX := dts/
 TARGET_KERNEL_DTBO := google/devices/lynx/dtbo.img
